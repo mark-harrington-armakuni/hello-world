@@ -8,3 +8,7 @@ jobs:
       - run:
           name: Run test
           command: node test.js
+workflows:
+  build_test:
+    jobs:
+      - test
