@@ -1,2 +1,10 @@
 version: 2
 jobs:
+  test:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run:
+          name: Run test
+          command: node test.js
