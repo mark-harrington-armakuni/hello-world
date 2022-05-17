@@ -1,3 +1,3 @@
 import assert from "assert";
 
-assert(false)
+assert(true)
